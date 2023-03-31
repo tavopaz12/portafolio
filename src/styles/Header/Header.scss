@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  position: sticky;
+  background-color: #00040a;
+  color: white;
+  z-index: 999;
+  top: 0;
+}
+
+.header .logo h1 {
+  font-family: "Skranji", cursive;
+  font-size: 1.5rem;
+}
+
+.header__nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.header__nav a {
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.header__nav a.active {
+  border-bottom: 2px solid rgb(0, 162, 255);
+}
