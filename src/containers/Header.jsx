@@ -12,13 +12,15 @@ const navLinks = [
 ];
 
 export default function Header() {
-  const [activeLink, setActiveLink] = useState("home");
+  const [activeLink, setActiveLink] = useState("");
 
   return (
     <>
       <header className="header">
         <div className="logo">
-          <h1>Tavopaz</h1>
+          <a onClick={() => handleLinkClick("home", setActiveLink)}>
+            <h1>Tavopaz</h1>
+          </a>
         </div>
 
         <nav className="header__nav">

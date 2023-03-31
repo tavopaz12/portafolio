@@ -29,7 +29,7 @@ const logos = [
 
 export default function Index() {
   return (
-    <section id="home">
+    <section className="home" id="home">
       <div className="description">
         <h2 className="saludo">
           <span className="borde">Hi, World!🌍,</span>{" "}

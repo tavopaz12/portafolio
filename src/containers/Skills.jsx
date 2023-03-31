@@ -4,7 +4,7 @@ import "../styles/Skills/Skills.scss";
 
 export default function Skills() {
   return (
-    <section id="skills">
+    <section className="skills">
       <h2 className="title">Skills</h2>
 
       <div className="flex">

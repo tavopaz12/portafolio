@@ -4,7 +4,7 @@ import "../styles/About/About.scss";
 
 export default function About() {
   return (
-    <section id="about">
+    <section className="about">
       <h2 className="title">Sobre mi...</h2>
 
       <div className="about__card">
