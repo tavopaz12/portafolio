@@ -1,4 +1,4 @@
-import Card from "../components/card";
+import Card from "./Card";
 import { proyectos } from "../hooks/proyectos";
 
 import "../styles/Proyects/Proyects.scss";
@@ -9,7 +9,16 @@ export default function Proyects() {
       <h2 className="title">Proyectos</h2>
 
       <div className="cards__container">
-        <h1>Hola</h1>
+        {proyectos.map(({ name, desc, image, github, web }) => (
+          <Card
+            key={name}
+            title={name}
+            desc={desc}
+            image={image}
+            githubLink={github}
+            webLink={web}
+          />
+        ))}
       </div>
     </section>
   );
