@@ -8,10 +8,6 @@
   align-items: center;
 
   .title {
-    position: relative;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
     margin-bottom: 3rem;
   }
 
@@ -31,7 +27,7 @@
       transition: transform 0.2s ease-in-out;
     }
 
-    img:hover{
+    img:hover {
       transform: scale(1.3);
     }
   }
