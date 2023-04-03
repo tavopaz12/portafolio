@@ -30,7 +30,11 @@ export default function Footer() {
             rel="noreferrer"
             key={redSocial.name}
           >
-            <img src={redSocial.image} alt="linkedin" />
+            <img
+              sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px"
+              src={redSocial.image}
+              alt="linkedin"
+            />
           </a>
         ))}
       </div>

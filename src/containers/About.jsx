@@ -9,7 +9,12 @@ export default function About() {
 
       <div className="about__card">
         <div className="image">
-          <img src={image} alt="about" loading="lazy" />
+          <img
+            sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px"
+            src={image}
+            alt="about"
+            loading="lazy"
+          />
         </div>
         <div className="biografia">
           <p>

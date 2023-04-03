@@ -42,7 +42,13 @@ export default function Index() {
                 className="logo__container"
                 rel="noreferrer"
               >
-                <img loading="lazy" src={logo.src} alt={logo.name} />
+                <img
+                  srcSet=""
+                  sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px"
+                  loading="lazy"
+                  src={logo.src}
+                  alt={logo.name}
+                />
               </a>
             ))}
           </div>
@@ -72,6 +78,7 @@ export default function Index() {
       <div className="image__profile">
         <div className="hero__shape">
           <img
+            sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px"
             loading="lazy"
             src={banner}
             alt="banner"

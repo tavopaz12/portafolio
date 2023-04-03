@@ -13,6 +13,7 @@ export default function Card({
       <div className="card__image">
         <a rel="noopener noreferrer" href={webLink} target="_blank">
           <img
+            sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px"
             loading="lazy"
             src={image}
             alt="imagen"
