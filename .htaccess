@@ -2,3 +2,5 @@
 RewriteRule ^index\.html$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule . index.html [L]
+
+AddType text/cache-manifest .manifest
