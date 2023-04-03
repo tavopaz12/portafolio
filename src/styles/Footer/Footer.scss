@@ -45,8 +45,14 @@
 
 @media screen and (max-width: 700px) {
   .footer {
+    height: auto;
+
+    .follow{
+      margin-bottom: 0.5rem;
+    }
+
     .desc {
-      margin-top: 1rem;
+      margin-top: 0.5rem;
       width: 80%;
     }
   }
