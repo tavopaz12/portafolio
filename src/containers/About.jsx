@@ -1,4 +1,4 @@
-import image from "../assets/images/banner.png";
+import image from "../assets/images/banner.webp";
 
 import "../styles/About/About.scss";
 
@@ -9,7 +9,7 @@ export default function About() {
 
       <div className="about__card">
         <div className="image">
-          <img src={image} alt="" />
+          <img src={image} alt="about" loading="lazy" />
         </div>
         <div className="biografia">
           <p>

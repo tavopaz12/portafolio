@@ -11,6 +11,7 @@ export default function Skills() {
         {tecnologias.map((tecnologia) => (
           <div className="container__card">
             <img
+              loading="lazy"
               key={tecnologia.name}
               src={tecnologia.src}
               alt={tecnologia.name}

@@ -1,4 +1,4 @@
-import banner from "../assets/images/tavopaz12_dev.png";
+import banner from "../assets/images/tavopaz12_dev.webp";
 
 import facebook from "../assets/icons/facebook-50.png";
 import linkedin from "../assets/icons/linkedin-50.png";
@@ -52,7 +52,7 @@ export default function Index() {
               target="_blank"
               className="logo__container"
             >
-              <img src={logo.src} alt={logo.name} />
+              <img loading="lazy" src={logo.src} alt={logo.name} />
             </a>
           ))}
         </div>
@@ -60,6 +60,7 @@ export default function Index() {
 
       <div className="image__profile">
         <img
+          loading="lazy"
           src={banner}
           alt="banner"
           className="banner__profile image type-b"

@@ -10,13 +10,11 @@ export default function Card({
 }) {
   return (
     <div className="card__proyect">
-
       <div className="card__image">
-        <img src={image} alt="imagen" className="card__image" />
+        <img loading="lazy" src={image} alt="imagen" className="card__image" />
       </div>
 
       <div className="card__info">
-
         <div className="info">
           <p className="title__proyect">{title}</p>
           <span className="desc">{desc}</span>
@@ -30,11 +28,21 @@ export default function Card({
           </div>
 
           <div className="links">
-            <a rel="noopener noreferrer" href={webLink} target="_blank" className="view__demo">
+            <a
+              rel="noopener noreferrer"
+              href={webLink}
+              target="_blank"
+              className="view__demo"
+            >
               Ver Demo
             </a>
 
-            <a rel="noopener noreferrer" href={githubLink} target="_blank" className="view__code">
+            <a
+              rel="noopener noreferrer"
+              href={githubLink}
+              target="_blank"
+              className="view__code"
+            >
               Ver Codigo
             </a>
           </div>
