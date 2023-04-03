@@ -22,7 +22,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="follow">
-        <p>Sigueme en</p>
+        <p>Sígueme en:</p>
         {redesSociales.map((redSocial) => (
           <a
             href={redSocial.link}
