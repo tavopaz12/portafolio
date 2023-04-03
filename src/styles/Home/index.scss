@@ -41,14 +41,29 @@
       align-items: center;
       justify-content: space-between;
 
-      .contact__me{
-        background-color: var(--secondary-color);
-        border-radius: 1rem;
-        padding: 0.8rem 1.5rem;
+      .contact__me__container {
+        display: flex;
+        gap: 1rem;
+        .contact__me {
+          background-color: var(--secondary-color);
+          border-radius: 1rem;
+          padding: 0.8rem 1.5rem;
 
-        a{
-          color: white;
-          font-weight: bold;
+          a {
+            color: white;
+            font-weight: bold;
+          }
+        }
+
+        .buy__a__cooffe {
+          border: 1px solid var(--light-color);
+          border-radius: 1rem;
+          padding: 0.8rem 1.5rem;
+
+          a {
+            color: white;
+            font-weight: bold;
+          }
         }
       }
 
@@ -132,13 +147,22 @@
         flex-direction: column;
         margin-bottom: 1rem;
 
-        .contact__me{
+        .contact__me__container {
           order: -1;
-          width: 60%;
+          gap: 0.5rem;
+          display: flex;
           text-align: center;
-          padding: 0.3rem 1rem;
-        }
+          width: 90%;
 
+          .contact__me {
+            width: 50%;
+            padding: 0.3rem 0.5rem;
+          }
+          .buy__a__cooffe {
+            width: 50%;
+            padding: 0.2rem;
+          }
+        }
       }
     }
 

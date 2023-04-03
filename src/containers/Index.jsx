@@ -1,6 +1,5 @@
 import banner from "../assets/images/tavopaz12_dev.webp";
 
-import linkedin from "../assets/icons/linkedin-50.png";
 import whatsapp from "../assets/icons/whatsapp-50.png";
 import github from "../assets/icons/github-50.png";
 import instagram from "../assets/icons/instagram-50.png";
@@ -15,11 +14,6 @@ const logos = [
   },
   { name: "github", src: github, link: "https://github.com/tavopaz12" },
   { name: "whatsapp", src: whatsapp, link: "https://wa.me/+522781205512" },
-  {
-    name: "linkedin",
-    src: linkedin,
-    link: "https://www.linkedin.com/in/tavopaz12/",
-  },
 ];
 
 export default function Index() {
@@ -52,14 +46,25 @@ export default function Index() {
               </a>
             ))}
           </div>
-          <div className="contact__me">
-            <a
-              target="_blank"
-              rel="noreferrer"
-              href="https://www.linkedin.com/in/tavopaz12/"
-            >
-              Conecta conmigo
-            </a>
+          <div className="contact__me__container">
+            <div className="contact__me">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://www.linkedin.com/in/tavopaz12/"
+              >
+                Conecta conmigo
+              </a>
+            </div>
+            <div className="buy__a__cooffe">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://ko-fi.com/tavopaz12"
+              >
+                Donar
+              </a>
+            </div>
           </div>
         </div>
       </div>
