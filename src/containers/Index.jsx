@@ -1,4 +1,5 @@
 import banner from "../assets/images/tavopaz12_dev.png";
+
 import facebook from "../assets/icons/facebook-50.png";
 import linkedin from "../assets/icons/linkedin-50.png";
 import whatsapp from "../assets/icons/whatsapp-50.png";
@@ -31,17 +32,26 @@ export default function Index() {
   return (
     <section className="home" id="home">
       <div className="description">
-        <h2 className="saludo">
-          <span className="borde">Hi, World!🌍,</span>{" "}
+        <h2 className="description__title">
+          José Octavio Paz,{" "}
+          <span className="description__blue">Frontend Developer</span>.
         </h2>
-        <p className="my__name">
-          I'm Jose <span className="text__blue">octavio</span>
+
+        <p className="info">
+          Soy una persona creativa y apasionada por la programación, ideando
+          soluciones a problemas de forma sencilla, comprometido con el
+          desarrollo de experiencias de usuario accesibles y de alto rendimiento
+          web.
         </p>
-        <p className="profession">I'm developer web</p>
 
         <div className="link__redes">
           {logos.map((logo) => (
-            <a key={logo.name} href={logo.link} target="_blank" className="logo__container">
+            <a
+              key={logo.name}
+              href={logo.link}
+              target="_blank"
+              className="logo__container"
+            >
               <img src={logo.src} alt={logo.name} />
             </a>
           ))}
@@ -49,7 +59,11 @@ export default function Index() {
       </div>
 
       <div className="image__profile">
-        <img src={banner} alt="tavopaz12_dev" className="banner__profile" />
+        <img
+          src={banner}
+          alt="banner"
+          className="banner__profile image type-b"
+        />
       </div>
     </section>
   );

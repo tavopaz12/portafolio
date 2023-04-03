@@ -1,5 +1,10 @@
 import { useState } from "react";
 import "../styles/Contacto/Contacto.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCheckCircle,
+  faXmarkCircle,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Contacto() {
   const [nombre, setNombre] = useState("");
@@ -7,7 +12,11 @@ export default function Contacto() {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
-  const [res, setRes] = useState("");
+  const [res, setRes] = useState({
+    message: "",
+    status: "",
+  });
+
   const [loadind, setLoading] = useState("");
 
   const sendEmail = async (evt) => {
@@ -28,8 +37,12 @@ export default function Contacto() {
         options
       );
       const data = await res.json();
+      console.log(data);
 
-      setRes(data);
+      setRes({
+        message: data.message,
+        status: 200,
+      });
       setLoading(false);
 
       setNombre("");
@@ -37,10 +50,18 @@ export default function Contacto() {
       setSubject("");
       setMessage("");
     } catch (error) {
-      setRes(error);
+      setRes({ message: "Error durante el envio, mensaje no enviado", status: 400 });
       setLoading(false);
     }
+
+    setTimeout(() => {
+      setRes({
+        message: "",
+        status: "",
+      });
+    }, 6000);
   };
+
 
   const validateInputEmpty = () => {
     return (
@@ -51,7 +72,6 @@ export default function Contacto() {
     );
   };
 
-  console.log(validateInputEmpty());
 
   return (
     <section className="contact">
@@ -64,6 +84,18 @@ export default function Contacto() {
       </p>
 
       <form action="" className="form" onSubmit={sendEmail}>
+        {res.status === 200 ? (
+          <div className="alert success">
+            <FontAwesomeIcon icon={faCheckCircle} />
+            <p>{res.message}</p>
+          </div>
+        ) : res.status === 400 ? (
+          <div className="alert error">
+            <FontAwesomeIcon icon={faXmarkCircle} />
+            <p>{res.message}</p>
+          </div>
+        ) : null}
+
         <div className="flex">
           <label htmlFor="">
             <input
@@ -78,7 +110,7 @@ export default function Contacto() {
           <label htmlFor="">
             <input
               value={email}
-              type="text"
+              type="email"
               placeholder="Email"
               required
               onChange={(evt) => setEmail(evt.target.value)}
@@ -102,7 +134,7 @@ export default function Contacto() {
             placeholder="Mensaje"
             name=""
             id=""
-            rows="10"
+            rows="8"
             required
             onChange={(evt) => setMessage(evt.target.value)}
           ></textarea>

@@ -4,9 +4,9 @@
 
   .cards__container {
     margin-top: 2rem;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     gap: 2rem;
+    width: 100%;
+    display: grid;
+    place-items: center;
   }
 }

@@ -21,22 +21,42 @@ export default function Home() {
       <Header />
 
       <Index />
-
-      <div id="about" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="50">
+      <div
+        id="about"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+        data-aos-offset="50"
+      >
         <About />
       </div>
 
-      <div id="skills" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="50">
+      <div
+        id="skills"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-offset="50"
+      >
         <Skills />
       </div>
 
-      <div id="projects" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="50">
+      <div
+        id="projects"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-offset="50"
+      >
         <Proyects />
       </div>
 
-      <div id="contact" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="50">
+      {/*
+      <div
+        id="contact"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-offset="50"
+      >
         <Contacto />
-      </div>
+      </div> */}
 
       <Footer />
     </>

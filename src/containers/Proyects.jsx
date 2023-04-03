@@ -9,7 +9,7 @@ export default function Proyects() {
       <h2 className="title">Proyectos</h2>
 
       <div className="cards__container">
-        {proyectos.map(({ name, desc, image, github, web }) => (
+        {proyectos.map(({ name, desc, image, github, web, tecnologias }) => (
           <Card
             key={name}
             title={name}
@@ -17,6 +17,7 @@ export default function Proyects() {
             image={image}
             githubLink={github}
             webLink={web}
+            tecnologias={tecnologias}
           />
         ))}
       </div>

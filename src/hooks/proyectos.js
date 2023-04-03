@@ -3,6 +3,7 @@ import portafolio from "../assets/images/portafolio.webp";
 import curpGenerator from "../assets/images/curpGenerator.webp";
 import apiRest from "../assets/images/apiRest.webp";
 import todoApp from "../assets/images/todoApp.webp";
+import {tecnologias} from './icons'
 
 export const proyectos = [
   {
@@ -11,6 +12,7 @@ export const proyectos = [
     image: tucanteach,
     github: "https://github.com/tavopaz12/TucanTeach_APPV1.0",
     web: "https://tucanteach.ml",
+    tecnologias: ['Sass', 'JavaScript', 'NodeJs', 'Git', 'React']
   },
   {
     name: "Portafolio",
@@ -18,6 +20,7 @@ export const proyectos = [
     image: portafolio,
     github: "https://github.com/tavopaz12/portafolio",
     web: "https://portafolio-tavo.netlify.app/",
+    tecnologias: ['React', 'Sass', 'JavaScript', 'Git']
   },
   {
     name: "Curp | Generador",
@@ -25,6 +28,7 @@ export const proyectos = [
     image: curpGenerator,
     github: "https://github.com/tavopaz12/curp-generador",
     web: "https://tavopaz12.github.io/curp-generador",
+    tecnologias: ['JavaScript', 'Css', 'Git']
   },
   {
     name: "API REST | Tucanteach",
@@ -32,6 +36,7 @@ export const proyectos = [
     image: apiRest,
     github: "https://github.com/tavopaz12/API_V1_Tucanteach",
     web: "https://tavopaz12.ml/api/v1/cursos",
+    tecnologias: ['Sql', 'Express', 'NodeJs', 'Postgres', 'Docker']
   },
 
   {
@@ -40,5 +45,6 @@ export const proyectos = [
     image: todoApp,
     github: "https://github.com/tavopaz12/alura-todoApp",
     web: "https://tavo-blog.gq",
+    tecnologias: ['JavaScript', 'Figma', 'Css', 'Git', 'Html']
   },
 ];

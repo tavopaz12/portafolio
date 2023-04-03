@@ -9,11 +9,15 @@ export default function Skills() {
 
       <div className="flex">
         {tecnologias.map((tecnologia) => (
-          <img
-            key={tecnologia.name}
-            src={tecnologia.src}
-            alt={tecnologia.name}
-          />
+          <div className="container__card">
+            <img
+              key={tecnologia.name}
+              src={tecnologia.src}
+              alt={tecnologia.name}
+              className="img"
+            />
+            <p className="name">{tecnologia.name}</p>
+          </div>
         ))}
       </div>
     </section>
