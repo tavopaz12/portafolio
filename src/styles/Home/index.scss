@@ -35,27 +35,46 @@
     }
 
     .link__redes {
+      margin-top: 2rem;
       display: flex;
-      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-between;
 
-      .logo__container {
-        background-color: black;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0.4rem;
+      .contact__me{
+        background-color: var(--secondary-color);
+        border-radius: 1rem;
+        padding: 0.8rem 1.5rem;
 
-        img {
-          width: 25px;
-          cursor: pointer;
-          object-fit: cover;
-          height: 25px;
-          filter: invert(1);
+        a{
+          color: white;
+          font-weight: bold;
         }
+      }
 
-        img:hover {
-          filter: invert(0.5) sepia(2) hue-rotate(150deg) saturate(1000%);
+      .redes {
+        display: flex;
+        gap: 1rem;
+
+        .logo__container {
+          background-color: black;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0.4rem;
+
+          img {
+            width: 25px;
+            cursor: pointer;
+            object-fit: cover;
+            height: 25px;
+            filter: invert(1);
+          }
+
+          img:hover {
+            filter: invert(0.5) sepia(2) hue-rotate(150deg) saturate(1000%);
+          }
         }
       }
     }
@@ -90,7 +109,7 @@
       line-height: 2.5rem;
 
       .description__title {
-        text-align: left;
+        text-align: center;
         font-size: 2rem;
         font-weight: bold;
         margin-bottom: 1rem;
@@ -103,13 +122,29 @@
       .info {
         font-size: 1rem;
         line-height: 1.2rem;
+        text-align: center;
         color: var(--secondary-text-color);
+      }
+
+      .link__redes {
+        margin-top: 1rem;
+        gap: 2rem;
+        flex-direction: column;
+        margin-bottom: 1rem;
+
+        .contact__me{
+          order: -1;
+          width: 60%;
+          text-align: center;
+          padding: 0.3rem 1rem;
+        }
+
       }
     }
 
     .image__profile {
       order: -1;
-      margin-top: 7rem;
+      margin-top: 3rem;
 
       .banner__profile {
         width: 250px;

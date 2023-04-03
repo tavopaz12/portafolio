@@ -39,17 +39,28 @@ export default function Index() {
         </p>
 
         <div className="link__redes">
-          {logos.map((logo) => (
+          <div className="redes">
+            {logos.map((logo) => (
+              <a
+                key={logo.name}
+                href={logo.link}
+                target="_blank"
+                className="logo__container"
+                rel="noreferrer"
+              >
+                <img loading="lazy" src={logo.src} alt={logo.name} />
+              </a>
+            ))}
+          </div>
+          <div className="contact__me">
             <a
-              key={logo.name}
-              href={logo.link}
               target="_blank"
-              className="logo__container"
               rel="noreferrer"
+              href="https://www.linkedin.com/in/tavopaz12/"
             >
-              <img loading="lazy" src={logo.src} alt={logo.name} />
+              Conecta conmigo
             </a>
-          ))}
+          </div>
         </div>
       </div>
 

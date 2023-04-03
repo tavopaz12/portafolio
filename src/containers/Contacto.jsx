@@ -104,7 +104,6 @@ export default function Contacto() {
             <input
               value={nombre}
               name="name"
-              pattern="[a-z]*"
               type="text"
               placeholder="Nombre"
               required
