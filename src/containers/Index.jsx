@@ -1,6 +1,5 @@
 import banner from "../assets/images/tavopaz12_dev.webp";
 
-import facebook from "../assets/icons/facebook-50.png";
 import linkedin from "../assets/icons/linkedin-50.png";
 import whatsapp from "../assets/icons/whatsapp-50.png";
 import github from "../assets/icons/github-50.png";
@@ -20,11 +19,6 @@ const logos = [
     name: "linkedin",
     src: linkedin,
     link: "https://www.linkedin.com/in/tavopaz12/",
-  },
-  {
-    name: "facebook",
-    src: facebook,
-    link: "https://www.facebook.com/tavoopj.paz3/",
   },
 ];
 

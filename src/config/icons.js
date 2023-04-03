@@ -14,24 +14,24 @@ import slack from "../assets/icons/icons8-slack-50.png";
 import postgres from "../assets/icons/icons8-postgresql-50.png";
 import mongodb from "../assets/icons/icons8-mongodb-50.png";
 import figma from "../assets/icons/icons8-figma-50.png";
-import php from "../assets/icons/PHP-logo.svg.png";
+import docker from "../assets/icons/docker.webp";
 import lit from "../assets/icons/lit-800x800.png";
 
 export const tecnologias = [
   { name: "JavaScript", src: js },
   { name: "python", src: py },
-  { name: "PHP", src: php },
   { name: "HTML", src: html },
   { name: "CSS", src: css },
-  { name: "sql", src: sql },
   { name: "react", src: react },
   { name: "angular", src: angular },
+  { name: "litElement", src: lit },
   { name: "node.js", src: nodejs },
-  { name: "lit", src: lit },
+  { name: "sql", src: sql },
   { name: "sass", src: sass },
-  { name: "postgress", src: postgres },
   { name: "mongodb", src: mongodb },
-  { name: "slack", src: slack },
-  { name: "figma", src: figma },
   { name: "git", src: git },
+  { name: "Docker", src: docker },
+  { name: "postgress", src: postgres },
+  { name: "slack", src: slack },
+  { name: "figma", src: figma }
 ];

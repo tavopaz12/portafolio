@@ -5,7 +5,7 @@ import "../styles/Header/Header.scss";
 
 const navLinks = [
   { name: "home", label: "Inicio" },
-  { name: "about", label: "Sobre mi" },
+  { name: "about", label: "Resumen" },
   { name: "skills", label: "Skills" },
   { name: "projects", label: "Proyectos" },
   { name: "contact", label: "Contacto" },
