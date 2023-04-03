@@ -17,5 +17,15 @@ module.exports = {
     'react'
   ],
   rules: {
+    'no-console': 'warn',
+    'no-use-before-define': 'warn',
+    'spaced-comment': 'warn',
+    'react/jsx-uses-react': 'off',
+    'react/prop-types': 'off',
+    'react/react-in-jsx-scope': 'off',
+    quotes: 'off',
+    semi: 'off',
+    'comma-dangle': 'off',
+    'space-before-function-paren': 'off'
   }
 }

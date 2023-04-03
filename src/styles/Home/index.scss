@@ -118,16 +118,32 @@
   }
 }
 
-@keyframes zoom-b {
+@keyframes zoom-animate {
   0% {
-    -ms-transform: scale(1, 1);
     transform: scale(1, 1) translateZ(1px);
   }
   100% {
-    -ms-transform: scale(1.2, 1.2);
     transform: scale(1.2, 1.2) translateZ(1px);
   }
 }
-.type-b {
-  animation: zoom-b 10s linear infinite alternate; /* IE 10+, Fx 29+ */
+
+@keyframes hero_morph {
+  0% {
+    border-radius: 40% 60% 60% 40%/60% 30% 70% 40%;
+  }
+
+  to {
+    border-radius: 40% 60%;
+  }
+}
+
+.hero__shape {
+  width: 100%;
+  animation: hero_morph 8s ease-in-out infinite alternate both;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.image__animated {
+  animation: zoom-animate 10s linear infinite alternate;
 }

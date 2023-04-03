@@ -1,10 +1,11 @@
 import { useState } from "react";
-import "../styles/Contacto/Contacto.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCheckCircle,
   faXmarkCircle,
 } from "@fortawesome/free-solid-svg-icons";
+
+import "../styles/Contacto/Contacto.scss";
 
 export default function Contacto() {
   const [nombre, setNombre] = useState("");
@@ -37,7 +38,6 @@ export default function Contacto() {
         options
       );
       const data = await res.json();
-      console.log(data);
 
       setRes({
         message: data.message,
@@ -50,7 +50,10 @@ export default function Contacto() {
       setSubject("");
       setMessage("");
     } catch (error) {
-      setRes({ message: "Error durante el envio, mensaje no enviado", status: 400 });
+      setRes({
+        message: "Error durante el envio, mensaje no enviado",
+        status: 400,
+      });
       setLoading(false);
     }
 
@@ -62,7 +65,6 @@ export default function Contacto() {
     }, 6000);
   };
 
-
   const validateInputEmpty = () => {
     return (
       nombre.trim() === "" ||
@@ -72,10 +74,9 @@ export default function Contacto() {
     );
   };
 
-
   return (
     <section className="contact">
-      <h2 className="title">Contaco</h2>
+      <h2 className="title">Contáctame</h2>
 
       <p className="info">
         Estoy interesado en oportunidades independientes, especialmente
@@ -84,22 +85,26 @@ export default function Contacto() {
       </p>
 
       <form action="" className="form" onSubmit={sendEmail}>
-        {res.status === 200 ? (
+        {res.status === 200 && (
           <div className="alert success">
             <FontAwesomeIcon icon={faCheckCircle} />
             <p>{res.message}</p>
           </div>
-        ) : res.status === 400 ? (
+        )}
+
+        {res.status === 400 && (
           <div className="alert error">
             <FontAwesomeIcon icon={faXmarkCircle} />
             <p>{res.message}</p>
           </div>
-        ) : null}
+        )}
 
         <div className="flex">
           <label htmlFor="">
             <input
               value={nombre}
+              name="name"
+              pattern="[a-z]*"
               type="text"
               placeholder="Nombre"
               required

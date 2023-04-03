@@ -3,7 +3,6 @@ import portafolio from "../assets/images/portafolio.webp";
 import curpGenerator from "../assets/images/curpGenerator.webp";
 import apiRest from "../assets/images/apiRest.webp";
 import todoApp from "../assets/images/todoApp.webp";
-import {tecnologias} from './icons'
 
 export const proyectos = [
   {

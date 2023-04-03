@@ -1,5 +1,5 @@
 import Card from "./Card";
-import { proyectos } from "../hooks/proyectos";
+import { proyectos } from "../config/proyectos";
 
 import "../styles/Proyects/Proyects.scss";
 

@@ -11,7 +11,14 @@ export default function Card({
   return (
     <div className="card__proyect">
       <div className="card__image">
-        <img loading="lazy" src={image} alt="imagen" className="card__image" />
+        <a rel="noopener noreferrer" href={webLink} target="_blank">
+          <img
+            loading="lazy"
+            src={image}
+            alt="imagen"
+            className="card__image"
+          />
+        </a>
       </div>
 
       <div className="card__info">
@@ -21,7 +28,7 @@ export default function Card({
 
           <div className="tecnologys">
             {tecnologias?.map((tecnologia) => (
-              <div className="container">
+              <div className="container" key={tecnologia}>
                 <p>{tecnologia}</p>
               </div>
             ))}

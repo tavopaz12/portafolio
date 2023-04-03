@@ -1,17 +1,17 @@
-import image from "../assets/images/banner.webp";
+import image from '../assets/images/banner.webp'
 
-import "../styles/About/About.scss";
+import '../styles/About/About.scss'
 
-export default function About() {
+export default function About () {
   return (
-    <section className="about">
-      <h2 className="title">Sobre mi...</h2>
+    <section className='about'>
+      <h2 className='title'>Sobre mi...</h2>
 
-      <div className="about__card">
-        <div className="image">
-          <img src={image} alt="about" loading="lazy" />
+      <div className='about__card'>
+        <div className='image'>
+          <img src={image} alt='about' loading='lazy' />
         </div>
-        <div className="biografia">
+        <div className='biografia'>
           <p>
             ¡Hola! Mi nombre es José Octavio Paz y soy desarrollador frontend
             con más de 3 años de experiencia. Me especializo en React.js,
@@ -40,5 +40,5 @@ export default function About() {
         </div>
       </div>
     </section>
-  );
+  )
 }

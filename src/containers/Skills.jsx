@@ -1,4 +1,4 @@
-import { tecnologias } from "../hooks/icons.js";
+import { tecnologias } from "../config/icons.js";
 
 import "../styles/Skills/Skills.scss";
 
@@ -9,7 +9,7 @@ export default function Skills() {
 
       <div className="flex">
         {tecnologias.map((tecnologia) => (
-          <div className="container__card">
+          <div className="container__card" key={tecnologia.name}>
             <img
               loading="lazy"
               key={tecnologia.name}

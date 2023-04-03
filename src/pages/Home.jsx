@@ -6,7 +6,7 @@ import Index from "../containers/Index";
 import Proyects from "../containers/Proyects";
 import Skills from "../containers/Skills";
 
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -48,7 +48,6 @@ export default function Home() {
         <Proyects />
       </div>
 
-      {/*
       <div
         id="contact"
         data-aos="fade-up"
@@ -56,7 +55,7 @@ export default function Home() {
         data-aos-offset="50"
       >
         <Contacto />
-      </div> */}
+      </div>
 
       <Footer />
     </>

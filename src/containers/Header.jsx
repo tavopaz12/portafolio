@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { handleLinkClick } from "../hooks/activesLinks";
+import { handleLinkClick } from "../config/activesLinks";
 
 import "../styles/Header/Header.scss";
 
