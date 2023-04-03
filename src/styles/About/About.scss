@@ -30,11 +30,12 @@
     .biografia {
       width: 60%;
       text-align: left;
-      font-size: 1.3rem;
-      line-height: 1.3rem;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+      color: rgba($color: #ffffff, $alpha: 0.6);
 
       p {
-        margin-bottom: 1rem;
+        margin-bottom: 0.4rem;
       }
     }
   }
