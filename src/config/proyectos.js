@@ -1,5 +1,4 @@
 import tucanteach from "../assets/images/tucanteach.webp";
-import portafolio from "../assets/images/portafolio.webp";
 import curpGenerator from "../assets/images/curpGenerator.webp";
 import apiRest from "../assets/images/apiRest.webp";
 import todoApp from "../assets/images/todoApp.webp";
@@ -12,14 +11,6 @@ export const proyectos = [
     github: "https://github.com/tavopaz12/TucanTeach_APPV1.0",
     web: "https://tucanteach.ml",
     tecnologias: ['Sass', 'JavaScript', 'NodeJs', 'Git', 'React']
-  },
-  {
-    name: "Portafolio",
-    desc: "Portafolio web",
-    image: portafolio,
-    github: "https://github.com/tavopaz12/portafolio",
-    web: "https://portafolio-tavo.netlify.app/",
-    tecnologias: ['React', 'Sass', 'JavaScript', 'Git']
   },
   {
     name: "Curp | Generador",
