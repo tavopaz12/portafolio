@@ -53,24 +53,22 @@ export default function Index() {
             ))}
           </div>
           <div className="contact__me__container">
-            <div className="contact__me">
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://www.linkedin.com/in/tavopaz12/"
-              >
-                Conecta conmigo
-              </a>
-            </div>
-            <div className="buy__a__cooffe">
-              <a
-                target="_blank"
-                rel="noreferrer"
-                href="https://ko-fi.com/tavopaz12"
-              >
-                Donar
-              </a>
-            </div>
+            <a
+              className="contact__me"
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.linkedin.com/in/tavopaz12/"
+            >
+              <p>Conecta conmigo</p>
+            </a>
+            <a
+              className="buy__a__cooffe"
+              target="_blank"
+              rel="noreferrer"
+              href="https://ko-fi.com/tavopaz12"
+            >
+              <p>Donar</p>
+            </a>
           </div>
         </div>
       </div>
